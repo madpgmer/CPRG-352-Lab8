@@ -43,7 +43,7 @@ public class AdminFilter implements Filter {
         User user = userDB.get(email);
         //check if user is admin or not
         if ((email != null) && (user.getRole().getRoleId()!= 1)){
-            httpResponse.sendRedirect("login");
+            httpResponse.sendRedirect("notes");
             return;
         }
                       
